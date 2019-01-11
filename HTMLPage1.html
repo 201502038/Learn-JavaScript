@@ -4,7 +4,24 @@
     <meta charset="utf-8" />
     <title></title>
     <script>
-        alert('hello world!');
+
+        /*
+        if( confirm('continue?') )
+        {
+            alert(`${1+2}Hello`);
+        }
+        */
+        var data = new Date();
+        var hour = data.getDate();
+        let min = data.getMinutes();
+
+        if(min < 30)
+        {
+            alert('30분이전입니다.');
+        }
+        else { alert('30분이후입니다.'); }
+
+       
     </script>
 </head>
 <body>
