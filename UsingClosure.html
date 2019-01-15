@@ -9,7 +9,7 @@
        {
            setTimeout(function() { alert(i); }, 0);
        }
-       */
+       
        for (var i = 0; i < 3 ; i++) {
            (function (closed_i) {
                setTimeout(function () { alert(closed_i); }, 0);
@@ -18,6 +18,25 @@
            (i);
        }
 
+       //짧은 조건문
+
+       function test(a,b,c) {
+           alert(a);
+           alert(b);
+           alert(c);
+       }
+
+       var Func = (a, b) => { a * b; }
+       */
+       function arrange(a,b,c,d)
+       {
+           alert(`${a}:${b}:${c}:${d}`);
+       }
+       var array = [1, 2];
+
+       arrange(273, 52, ...array);
+
+       arrange(...array, ...array);
 
     </script>
 </head>

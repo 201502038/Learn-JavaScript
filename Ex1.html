@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+   
+    <script>
+
+        var power = (a,b) =>
+        {
+            b = b || 0;
+            (b != 0) ? alert(Math.pow(a, b)) : alert(a * a);
+        }
+
+        function multiply()
+        {
+            var number= arguments[0];
+            for (var i = 1; i < arguments.length;i++)
+            {
+                number = number * arguments[i];
+            }
+            alert(number);
+        }
+        /*
+        power(2);
+        power(2, 4);
+        
+        multiply(1,2,3,4);
+        multiply(1, 2, 3, 4, 5);
+        multiply(1, 2, 3, 4, 0);
+        */
+
+        function test(a,b,c)
+        {
+            console.log(a);
+            console.log(a*b);
+            console.log(a*b*c);
+        }
+   
+        test(10, 100);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
