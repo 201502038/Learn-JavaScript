@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //key and value
+        var product = {
+            Name: 'applePie',
+            type: 'Red',
+            component: 'suger'
+        }
+        var product1 = {
+            Name: 'applePie',
+            type: 'Red',
+            component: 'suger'
+        }
+        var product2 = {
+            Name: 'applePie2',
+            type: 'Red',
+            component: 'suger'
+        }
+
+        product.num = 10;
+        var output = '';
+        for(var key in product)
+        {
+            output += key + ':' + product[key] + '\n';
+        }
+        var _output = '';
+        with(product)
+        {
+            _output += Name +'\n';
+            _output += type +'\n';
+            _output += component + '\n'; 
+        }
+        delete(product.Name);
+
+        var array = [];
+
+        array.push(product);
+        array.push(product1);
+        array.push(product2);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

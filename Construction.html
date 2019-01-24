@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function student(name, age, height) {
+            this.이름 = name;
+            this.나이 = age;
+            this.키 = height;
+        }
+
+        student.prototype.info = function() {
+                alert(`이름:${this.이름},나이:${this.나이},키:${this.키}`);
+        }
+
+        var Kim = new student('곽병수',23,180);
+            
+        //Kim.info();
+
+        function mento(name, age, height) {
+            this.base = student;
+            this.base(name, age, height);
+        }
+        mento.prototype = student.prototype;
+        mento.prototype.constructor = student;
+        var jim = new mento('곽병수', 23, 180);
+        jim.info();
+       
+    </script>
+</head>
+<body>
+
+</body>
+</html>
