@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        var num = 273;
+        var objectNumber = new Number(10);
+
+        //override
+        Number.prototype.power = function ()
+        {
+            return this * this;
+        }
+
+        var object = {
+            Key: this.value,
+        };
+
+        class game {
+            constructor(type) {
+                this.type = type;
+            }
+            getType()
+            {
+                return this.type;
+            }
+        };
+
+        var maple = new game('RPG');
+        alert(maple.constructor);
+        alert(maple.getType());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
