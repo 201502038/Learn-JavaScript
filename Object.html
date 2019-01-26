@@ -30,8 +30,28 @@
         };
 
         var maple = new game('RPG');
-        alert(maple.constructor);
-        alert(maple.getType());
+        //alert(maple.constructor);
+        
+        var string = "Hello";
+        //비파괴적 메소드
+        alert(string.toUpperCase());
+
+        var array = [1,2,3,4,5];
+        //파괴적 메소드
+        array.reverse();
+        alert(array);
+         
+        function Test()
+        {
+
+        }
+        Test.prototype.testA = function () { return this; }
+        Test.prototype.testB = function () { return this; }
+        Test.prototype.testC = function () { return this; }
+
+        var test = new Test();
+        test.testA().testB();
+
 
     </script>
 </head>

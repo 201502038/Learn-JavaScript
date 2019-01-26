@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="underscore.js"></script>
+    <script>
+
+        var array = [
+        { 이름: "사과", 가격: 2000 },
+        { 이름: "바나나", 가격: 1000 },
+        { 이름: "포도", 가격: 4000 }
+        ];
+        console.log(_.sortBy(array, function (item) { return item.가격; }); );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
